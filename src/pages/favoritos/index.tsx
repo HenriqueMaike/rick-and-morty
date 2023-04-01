@@ -6,6 +6,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import styles from './styles.module.scss'
 
 import { toast } from "react-toastify";
+import Image from "next/image";
 
 interface Character{
     id: number;
@@ -64,7 +65,10 @@ export default function Favoritos(){
                             return(
                                 <li key={character.id}>
                                     <Link href={`/character/${character.id}`}>
-                                        <img src={`https://rickandmortyapi.com/api/character/avatar/${character.id}.jpeg`} alt={character.name}/>
+                                        <Image
+                                        width={40}
+                                        height={40}
+                                        src={`https://rickandmortyapi.com/api/character/avatar/${character.id}.jpeg`} alt={character.name}/>
                                     </Link>
                                     <span><strong>Nome: </strong>{character.name}</span>
                                     <p><strong>Status: </strong>{character.status}</p>

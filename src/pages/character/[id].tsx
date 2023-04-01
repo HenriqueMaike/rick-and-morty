@@ -7,6 +7,7 @@ import styles from './styles.module.scss'
 import { Button } from "@/components/ui/buttom";
 import { Header } from "@/components/Header";
 import { toast } from "react-toastify";
+import Image from "next/image";
 
 
 //tipagem do objeto character com as informacoes a exibir
@@ -59,7 +60,7 @@ export default function Character() {
     }
 
     loadCharacter();
-  }, [id]);
+  }, [id, router]);
 
 
 function handleFavorite(character: Character) {
@@ -105,7 +106,9 @@ function handleFavorite(character: Character) {
           <div className={styles.character} key={character.id}>
             
               <div className={styles.imagem}>
-                <img
+                <Image
+                    width={250}
+                    height={250}
                     src={`https://rickandmortyapi.com/api/character/avatar/${character.id}.jpeg`}
                     alt={character.name}
                   />

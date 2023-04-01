@@ -10,6 +10,7 @@ import {
   bindTrigger,
   bindMenu,
 } from 'material-ui-popup-state/hooks'
+import Image from 'next/image'
 
 export function Header(){
 
@@ -19,9 +20,9 @@ export function Header(){
     <>
       <header className={styles.headerContainer}>
         <div className={styles.headerContent}>
-          <a href="/">
-            <img src="/favicon.ico" width={190} height={60} />
-          </a>
+          <Link href="/">
+            <Image src="/favicon.ico" width={10} height={10} alt="logo"/>
+          </Link>
 
           <nav className={styles.menuNav}>
 

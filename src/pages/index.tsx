@@ -77,7 +77,7 @@ export default function Home() {
 
     handlePage();
 
-  },[statePage, name, gender, status, specie]) //statePage passado pelo array para que toda vez que houver alteracao de estado executa o useEffect
+  },[statePage, name, gender, status, specie, router]) //statePage passado pelo array para que toda vez que houver alteracao de estado executa o useEffect
 
   //Envia a quantidade de pagina obtido pela API e enviar o State para o componente de paginacao
   dispatch(numPage(pages))
