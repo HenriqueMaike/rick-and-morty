@@ -21,7 +21,7 @@ export function Header(){
       <header className={styles.headerContainer}>
         <div className={styles.headerContent}>
           <Link href="/">
-            <Image src="/favicon.ico" width={10} height={10} alt="logo"/>
+            <Image src="/logo.png" width={150} height={150} alt="logo"/>
           </Link>
 
           <nav className={styles.menuNav}>
