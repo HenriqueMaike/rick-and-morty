@@ -157,8 +157,8 @@ export default function Home() {
             {/*Mmap para exibir todos os item do array de objetos*/}
             {character.map((itens)=>{
                 return(
-                    <div className={styles.characters}>
-                      <article className="comments" key={itens.id}>
+                    <div className={styles.characters} key={itens.id}>
+                      <article className="comments">
                         <div>
                             <Link href={`/character/${itens.id}`}>
                               <Image 
