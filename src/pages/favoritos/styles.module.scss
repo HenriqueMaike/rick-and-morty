@@ -1,0 +1,58 @@
+.containerFavorito{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.favorito{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    ul{
+        display: flex;
+        width: 100%;
+        flex-direction: column;align-items: center;
+        gap: 20px;
+    }
+
+    li{
+        display: flex;
+        width: 90%;
+        height: 60px;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px 0px rgba(0.0, 0.0, 0.0, 0.75);
+        padding: 10px;
+        text-align: center;
+    }
+
+    button{
+        border: none;
+        font-size: 20px;
+        background-color: inherit;
+        color: var(--red-900);
+    }
+
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    img:hover{
+        width: 45px;
+        height: 45px;
+        box-shadow: 0px 0px 10px 0px rgba(0.0, 0.0, 0.0, 0.75);
+    }
+
+}
+
+.nenhum{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
