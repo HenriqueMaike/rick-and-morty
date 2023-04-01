@@ -12,6 +12,7 @@ import { Select } from '@/components/ui/select'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import LinearProgress from "@mui/material/LinearProgress";
+import Image from 'next/image'
 
 //tipagem do objeto Character
 interface Character {
@@ -160,7 +161,12 @@ export default function Home() {
                       <article className="comments" key={itens.id}>
                         <div>
                             <Link href={`/character/${itens.id}`}>
-                              <img src={`https://rickandmortyapi.com/api/character/avatar/${itens.id}.jpeg`} alt={itens.name}/>
+                              <Image 
+                                width={250}
+                                height={250}
+                                src={`https://rickandmortyapi.com/api/character/avatar/${itens.id}.jpeg`} 
+                                alt={itens.name}
+                              />
                             </Link>
                             <strong>{itens.name}</strong>
                         </div>
