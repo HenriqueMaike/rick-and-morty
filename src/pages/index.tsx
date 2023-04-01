@@ -13,6 +13,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import LinearProgress from "@mui/material/LinearProgress";
 import Image from 'next/image'
+import { toast } from "react-toastify";
 
 //tipagem do objeto Character
 interface Character {
@@ -69,7 +70,7 @@ export default function Home() {
       })
       .catch(() => {
           //caso params nao exista retorna a pagina inicial
-        router.push("/");
+        toast.error("Nao Encontrado")
       });
     }
 
