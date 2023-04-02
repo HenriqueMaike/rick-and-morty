@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import styles from '@/styles/home.module.scss'
-import PaginationLink from '@/components/pagination'
+import PaginationLink from '../components/pagination'
 import { useEffect, useState } from 'react'
 import api from '@/services/api'
 import { useDispatch, useSelector } from 'react-redux'
 import  {numPage}  from '../redux/useSlice'
 import Link from 'next/link';
 import { useRouter } from "next/router";
-import { Input } from '@/components/ui/input'
-import { Select } from '@/components/ui/select'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
+import { Input } from '../components/ui/input'
+import { Select } from '../components/ui/select'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 import LinearProgress from "@mui/material/LinearProgress";
 import Image from 'next/image'
 import { toast } from "react-toastify";
@@ -70,7 +70,7 @@ export default function Home() {
       })
       .catch(() => {
           //caso params nao exista retorna a pagina inicial
-        toast.error("Nao Encontrado")
+        toast.error("Personagem não encontrado")
       });
     }
 
@@ -117,7 +117,7 @@ export default function Home() {
               </div>
 
               <div className={styles.selects}>
-                <label>Genero</label>
+                <label>Gênero</label>
                 <Select
                 value={gender}
                 onChange={(e)=>setGender(e.target.value)}
@@ -140,7 +140,7 @@ export default function Home() {
                   <option>Unknown</option>
                 </Select>
 
-                <label>Especie</label>
+                <label>Espécie</label>
                 <Select
                 value={specie}
                 onChange={(e)=>setSpecie(e.target.value)}

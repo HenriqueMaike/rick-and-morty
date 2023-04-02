@@ -6,5 +6,3 @@ const api = axios.create({
 })
 
 export default api;
-
-//https://jumbled-smoke-7ef.notion.site/Desafio-T-cnico-Frontend-Web-fd6b6af685a5460794ffd45622f27dad

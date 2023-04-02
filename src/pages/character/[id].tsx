@@ -4,8 +4,8 @@ import LinearProgress from "@mui/material/LinearProgress";
 import api from "@/services/api";
 
 import styles from './styles.module.scss'
-import { Button } from "@/components/ui/buttom";
-import { Header } from "@/components/Header";
+import { Button } from "../../components/ui/buttom";
+import { Header } from "../../components/Header";
 import { toast } from "react-toastify";
 import Image from "next/image";
 
@@ -54,8 +54,7 @@ export default function Character() {
           setLoading(false);
         })
         .catch(() => {
-            //caso a pagina ao exista retorna a tela principal
-          router.push("/");
+
         });
     }
 
