@@ -2,6 +2,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+## --> Use npm install para instalar os pacotes node_module e dependencias.
+
+```bash
+
+npm install
+
+```
+
 First, run the development server:
 
 ```bash
